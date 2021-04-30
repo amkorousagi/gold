@@ -1,12 +1,16 @@
 import React from "react"
 import Grid from "@material-ui/core/Grid"
+import "./Header.css"
+import {useHistory} from "react-router-dom"
+
 const Header = (props) => {
+  const his = useHistory();
   //select category
   return (
-    <div >
+    <div className="Header">
       <Grid container justify='center' alignItems='center'>
-        <Grid item lg='3' md='3' sm='3' xl='3' xs='3'>
-          <h1>
+        <Grid item lg='3' md='3' sm='3' xl='3' xs='3' onClick={()=>{his.push("/home")}}>
+          <h1 >
             Gloden Life
           </h1>
         </Grid>

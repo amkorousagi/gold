@@ -15,6 +15,8 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import neck from "./neck.jpeg"
+import ring from "./ring.jpg"
+import bracelet from "./bracelet.jpeg"
 import {useHistory} from "react-router-dom"
 
 const useStyles = makeStyles((theme) => ({
@@ -43,22 +45,29 @@ const useStyles = makeStyles((theme) => ({
 export default function RecipeReviewCard(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-
+  let image;
+  if(props.id =="necklace"){
+      image = neck
+  }else if(props.id == "ring"){
+      image = ring
+  }else {
+      image = bracelet
+  }
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
   const his = useHistory()
   return (
-    <Card className={classes.root} onClick={()=>{his.push("/detail")}}>
+    <Card className={classes.root} onClick={()=>{his.push(`/detail?type=${props.id }`)}}>
       <CardHeader
         
         
-        title="목걸이1"
+        title={props.id}
         subheader="50,000원"
       />
       <CardMedia
         className={classes.media}
-        image={neck}
+        image={image}
         title="Paella dish"
       />
       <CardContent>
