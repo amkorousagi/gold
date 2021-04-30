@@ -33,9 +33,9 @@ function createReview(score, date, text) {
 }
 const reviews = [
   createReview(4.5, "2021.4.15", "즐겁다"),
-  createReview(4.8, "2021.4.16", "즐겁다"),
-  createReview(5.0, "2021.4.12", "즐겁다"),
-  createReview(4.0, "2021.4.17", "즐겁다"),
+  createReview(4.5, "2021.4.16", "즐겁다"),
+  createReview(4.0, "2021.4.12", "즐겁다"),
+  createReview(5.0, "2021.4.17", "즐겁다"),
 ]
 
 const Detail = ({ path, location }) => {
@@ -70,8 +70,9 @@ const Detail = ({ path, location }) => {
         <Grid item lg='12' md='12' sm='12' xl='12' xs='12'>
           <h2 style={{ textAlign: "center" }}>후기</h2>
         </Grid>
-        <Grid item lg='12' md='12' sm='12' xl='12' xs='12'>
-          <Rating readOnly defaultValue={5} />
+        <Grid item lg='6' md='6' sm='6' xl='6' xs='6'>
+          <p>평균 점수 : {4.5}/5</p>
+          <Rating readOnly defaultValue={4.5} precision={0.5} />
         </Grid>
         <Grid item lg='12' md='12' sm='12' xl='12' xs='12'>
           <Table size='small' aria-label='a dense table'>
@@ -92,7 +93,7 @@ const Detail = ({ path, location }) => {
               {reviews.map((row) => (
                 <TableRow key={row.score}>
                   <TableCell component='th' scope='row'>
-                    <Rating readOnly defaultValue={row.score} />
+                    <Rating readOnly precision={0.5} defaultValue={row.score} />
                   </TableCell>
                   <TableCell align='right'>
                     <p>{row.date}</p>
