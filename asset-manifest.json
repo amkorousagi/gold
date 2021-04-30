@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gold/static/css/main.db60c841.chunk.css",
+    "main.js": "/gold/static/js/main.84fbba3d.chunk.js",
+    "main.js.map": "/gold/static/js/main.84fbba3d.chunk.js.map",
+    "runtime-main.js": "/gold/static/js/runtime-main.26469db2.js",
+    "runtime-main.js.map": "/gold/static/js/runtime-main.26469db2.js.map",
+    "static/js/2.a004c381.chunk.js": "/gold/static/js/2.a004c381.chunk.js",
+    "static/js/2.a004c381.chunk.js.map": "/gold/static/js/2.a004c381.chunk.js.map",
+    "index.html": "/gold/index.html",
+    "static/css/main.db60c841.chunk.css.map": "/gold/static/css/main.db60c841.chunk.css.map",
+    "static/js/2.a004c381.chunk.js.LICENSE.txt": "/gold/static/js/2.a004c381.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/gold/static/media/logo.6ce24c58.svg",
+    "static/media/neck.5ebcef37.jpeg": "/gold/static/media/neck.5ebcef37.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26469db2.js",
+    "static/js/2.a004c381.chunk.js",
+    "static/css/main.db60c841.chunk.css",
+    "static/js/main.84fbba3d.chunk.js"
+  ]
+}
