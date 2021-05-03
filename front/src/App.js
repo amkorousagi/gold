@@ -12,7 +12,7 @@ function App({match, location}) {
     <div className="App">
       <Header/>
       <Divider/>
-      <Card id={query.type}/>
+      <Card id={query.type==undefined?"necklace":query.type}/>
     </div>
   );
 }
